@@ -347,7 +347,7 @@ input[name="r"]{
     width: 100px;
     margin-top: 20px;
 }
-#desItem{
+#desItem,#tegItem{
     width: 90%;
     height: 250px;
     margin-top: 5px;
@@ -399,21 +399,27 @@ input[name="r"]{
 .hiddenBlock{
     width: var(--width-container);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 30px;
 }
 .hiddenItem{
-    width: 50%;
+    width: 80%;
     border-radius: 20px;
-    padding: 10px 20px;
     font-size: 20px;
     transition: all 0.4s ease;
+    list-style:circle ;
+    display: flex;
+    font-family: serif;
+    flex-direction: row;
 }
-#characteristic,#using,#enviroment{
+.liClassification{
+    margin-left: 50px;
+}
+#tegs{
     display: none;
     transition: all 1s ease;
 }
-#characteristic[active],#using[active],#enviroment[active]{
+#tegs[active]{
     display: flex;
     transition: all 1s ease;
     transform: scale(1.0);

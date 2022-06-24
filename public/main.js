@@ -6,23 +6,16 @@ const body = document.querySelector("body");
 const modalWindow = document.querySelector('.modalWindow');
 const modal = document.querySelector('.modal');
 // BTN
-const btncharacteristic = document.querySelector('#btncharacteristic');
-const btnusing = document.querySelector('#btnusing');
-const btnenviroment = document.querySelector('#btnenviroment');
+const btnTegs = document.querySelector('#btnTegs');
+
 // HIDDENBLOCKS
-const characteristic = document.querySelector('#characteristic');
-const using = document.querySelector('#using');
-const enviroment = document.querySelector('#enviroment');
+const tegs = document.querySelector('#tegs');
+
 // HIDDENLOGIC
-btncharacteristic.addEventListener('click', ()=>{
-    characteristic.toggleAttribute('active');
+btnTegs.addEventListener('click', ()=>{
+    tegs.toggleAttribute('active');
 })
-btnusing.addEventListener('click', ()=>{
-    using.toggleAttribute('active');
-})
-btnenviroment.addEventListener('click', ()=>{
-    enviroment.toggleAttribute('active');
-})
+
 /*-------------=---------------*/
 burger.addEventListener('click', (e)=>{
     burger.toggleAttribute('active');
