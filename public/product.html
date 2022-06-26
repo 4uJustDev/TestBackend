@@ -37,8 +37,8 @@
                         </a>
                     </div>
                     <div class="vertical">
-                        <p class="txtLogo">Zarubin Alexander Nicolaevich</p>
-                        <p class="txtDate">Date: 08.08.2020</p>
+                        <p class="txtLogo"><span class="jsAuthor"></span></p>
+                        <p class="txtDate">Date:<span class="jsDate"></span></p>
                     </div>
                 </div>
                 <div class="slider middle">
@@ -48,7 +48,7 @@
                         <input type="radio" name="r" id="r3">
                         <input type="radio" name="r" id="r4">
 
-                        <dib class="slide" s1><img src="/img/{photoID}.jpg" alt="photoModel"></dib>
+                        <dib class="slide" s1><img src="" alt="photoModel" class="jsPhoto"></dib>
                         <dib class="slide"><img src="/img/11.jpg" alt="photoModel"></dib>
                         <dib class="slide"><img src="/img/12.jpg" alt="photoModel"></dib>
                         <dib class="slide"><img src="/img/13.jpg" alt="photoModel"></dib>
@@ -62,17 +62,17 @@
                 </div>
             </div>
             <div class="information vertical">
-                <h1 class="txtTittle"><strong>Name:Boing</strong></h1>
+                <h1 class="txtTittle"><strong>Name:<span class="jsName"></span></strong></h1>
                 <div class="textArea">
                     <div class="type txtType">
-                        <B>Type:2224-4324-423423</B>
+                        <B>Type:<span class="jsType"></span></B>
                     </div>
                     <div class="description">
-                        <p>Выкладываю один старый текст, написанный приблизительно в 2002 г. До этого он выкладывался на старом сайте и в «ЖЖ». В 2006 году текст (в числе ряда статей, написанных в то время) должен был войти в книгу «Бытие как момент истины». Однако редактор издательства посчитал его для книги неподходящим. Сейчас мне уже сложно сказать, о чем конкретно этот текст повествует. Можно связать его смысл с определенными</p>
+                        <p><span class="jsDescription"></span></p>
                     </div>
                     <div class="horizontal price" >
                         Price:
-                        <p class="price">359$</p>
+                        <p class="price"><span class="jsPrice"></span>$</p>
                     </div>
                 </div>
                 <button class="menuItem btnCustom">
@@ -84,11 +84,7 @@
             <button class="btnUnder" id="btnTegs"><p class="txtButton">Теги</p></button>
         </div>
         <span class="hiddenBlock">
-            <ul class="hiddenItem" id="tegs">
-                <li class="liClassification"><p>3D model</p></li>
-                <li class="liClassification"><p>Airplane</p></li>
-                <li class="liClassification"><p>Inventor</p></li>
-                <li class="liClassification"><p>Substract Painter</p></li>
+            <ul class="hiddenItem jsTegs">
             </ul>
         </span>
     </div>
@@ -134,5 +130,6 @@
         </div>
     </span>
     <script src="/main.js"></script>
+    <script src="/product.js"></script>
 </body>
 </html>

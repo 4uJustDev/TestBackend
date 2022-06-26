@@ -415,11 +415,11 @@ input[name="r"]{
 .liClassification{
     margin-left: 50px;
 }
-#tegs{
+.jsTegs{
     display: none;
     transition: all 1s ease;
 }
-#tegs[active]{
+.jsTegs[active]{
     display: flex;
     transition: all 1s ease;
     transform: scale(1.0);

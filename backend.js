@@ -9,16 +9,13 @@ const __dirname = path.resolve(path.dirname(''));
 // const cards = document.querySelectorAll(".card")
 // const index = document.getElementById(`${id}`)
 
+
+
 app.use(express.static(path.resolve(__dirname, 'public')))
-
-
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
-app.get('/product1', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'product.html'))
-})
-app.get('/product2', (req, res) => {
+app.get('/product', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'product.html'))
 })
 
