@@ -10,12 +10,12 @@ const __dirname = path.resolve(path.dirname(''));
 // const index = document.getElementById(`${id}`)
 
 
-
 app.use(express.static(path.resolve(__dirname, 'public')))
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
-app.get('/product', (req, res) => {
+app.get('/product/:id', (req, res) => {
+  console.log(req.params.id)
   res.sendFile(path.resolve(__dirname, 'public', 'product.html'))
 })
 

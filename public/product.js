@@ -1,6 +1,6 @@
 // BTN
 const btnTegs = document.querySelector('#btnTegs');
-
+const card = document.querySelectorAll(".card")
 // HIDDENBLOCKS
 const tegs = document.querySelector('.jsTegs');
 
