@@ -1,6 +1,15 @@
+//Burger
+/*-------------=---------------*/
+const burger = document.querySelector('.burger')
+const menu = document.querySelector('.menu')
+burger.addEventListener('click', (e)=>{
+    burger.toggleAttribute('active');
+    menu.toggleAttribute('active');
+});
+
 // BTN
 const btnTegs = document.querySelector('#btnTegs');
-const card = document.querySelectorAll(".card")
+
 // HIDDENBLOCKS
 const tegs = document.querySelector('.jsTegs');
 
@@ -17,19 +26,6 @@ const jsDescription = document.querySelector('.jsDescription')
 const jsPrice = document.querySelector('.jsPrice')
 const jsPhoto = document.querySelector('.jsPhoto')
 const jsTegs = document.querySelector('.jsTegs')
-
-
-let Oproduct1 ={
-    id: "1",
-    author: "Alex",
-    date: Date.now(),
-    name: "Pistol",
-    type: "123123123",
-    description: "This is my text",
-    price: "225",
-    photo: "/img/2.jpg",
-    tegs: "3D,Blender,Model,inventor,Substruct painter,Airplane"
-}
 let Oproduct2 ={
     id: "2",
     author: "AlexAlexAlex",
@@ -56,14 +52,4 @@ for(let i=0; i<arrayOfStrings.length; i+=1){
     tegLi.className = "liClassification";
     tegLi.innerHTML =`<p>${arrayOfStrings[i]}</p>`
     jsTegs.append(tegLi)
-}
-
-
-
-
-function splitString(stringToSplit, separator) {
-    let arrayOfStrings = stringToSplit.split(separator);
-    console.log('Оригинальная строка: "' + stringToSplit + '"');
-    console.log('Разделитель: "' + separator + '"');
-    console.log('Массив содержит ' + arrayOfStrings.length + ' элементов: ' + arrayOfStrings.join(' / '));
 }

@@ -229,7 +229,7 @@ body{
 /* MODALWINDOW */
 .modalWindow{
     width: 100%;
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.5) ;
     display: none;
     flex-direction: column;
@@ -290,7 +290,7 @@ body{
     width: 100px;
     margin-top: 20px;
 }
-#desItem{
+#desItem,#tegItem{
     width: 90%;
     height: 250px;
     margin-top: 5px;

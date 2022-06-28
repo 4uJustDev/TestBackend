@@ -1,24 +1,19 @@
 import express from 'express'
 import path from 'path'
+import router from "./routers/router.js"
 import 'dotenv/config'
+import cors from 'cors';
 
 const PORT = process.env.PORT || 3000
+
 const app = express()
 const __dirname = path.resolve(path.dirname(''));
-
-// const cards = document.querySelectorAll(".card")
-// const index = document.getElementById(`${id}`)
-
-
+app.use(cors());
 app.use(express.static(path.resolve(__dirname, 'public')))
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-})
-app.get('/product/:id', (req, res) => {
-  console.log(req.params.id)
-  res.sendFile(path.resolve(__dirname, 'public', 'product.html'))
-})
+app.use(express.json( { extended: true }));
+app.use(express.urlencoded( {extended: false}))
+app.use(router);
 
-app.listen(PORT, () => {
-  console.log(`Server started at PORT ${PORT}`)
-})
+app.listen(PORT, () => {console.log(`Server started at PORT ${PORT}`)})
+
+

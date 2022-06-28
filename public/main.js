@@ -9,6 +9,7 @@ burger.addEventListener('click', (e)=>{
     menu.toggleAttribute('active');
 });
 
+
 modalWindow.addEventListener('click',(e)=>{
     modalWindow.style.display = 'none';
     e.stopPropagation();
